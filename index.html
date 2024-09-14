@@ -39,6 +39,17 @@
             margin: 20px;
         }
 
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover{
+            background-color: lavender;
+            color: black;
+            border-radius: 5px;
+        }
+
         .left, .right {
             font-family: 'Roboto Slab', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
@@ -47,10 +58,10 @@
         .first-sec {
             display: flex;
             justify-content: space-around;
-            margin: 20px;
+            margin: 70px 0;
         }
 
-        .first-sec div{
+        .first-sec > div{
             width : 35%
         }
 
@@ -59,7 +70,20 @@
         }
 
         .left-sec{
-            font-size: 1rem;
+            font-size:2.1rem;
+            margin-top: 70px;
+        }
+
+        .right-sec img{
+            display: flex;
+            margin-bottom: 50px;
+        }
+
+        .left-sec-utility1{
+            color: rgb(255, 6, 43);
+        }
+        .left-sec-utility2{
+            color : rgb(16, 255, 255)
         }
     </style>
 </head>
@@ -70,11 +94,11 @@
             <div class="left"><b></b><i>Rishi's Portfolio</i></div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Tech</li>
-                    <li>Projects</li>
-                    <li>Socials</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Tech</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="https://linktr.ee/RishiVatsal_2004" target="_blank">Socials</a></li>
                 </ul>
             </div>
         </nav>
@@ -82,10 +106,10 @@
 
     <main>
         <section class="first-sec">
-            <div class="left-sec">Hello , My name is Rishi<br>
-                and I am A <b>Backend-Developer</b>
+            <div class="left-sec">Hello , My name is <span class="left-sec-utility1">Rishi</span><br>
+                and I am a Zealous<br><div><span class="left-sec-utility2">Backend-Developer</span></div>
             </div>
-            <div class="right-sec">Right-Section</div>
+            <div class="right-sec"><img src="/img/dev.svg" alt="" width=130%" height="80%"></div>
         </section>
     </main>
 </body>
