@@ -69,6 +69,13 @@
             font-size:1rem;
         }
 
+        .right-sec .img-me{
+            width : 100%;
+            height : 90%;
+            border: 5px solid rgb(255, 0, 0);
+            border-radius: 8px;
+        }
+
         .left-sec{
             font-size:2.1rem;
             margin-top: 70px;
@@ -85,6 +92,39 @@
         .left-sec-utility2{
             color : rgb(16, 255, 255)
         }
+
+        .second-section{
+            max-width: 90vw;
+            margin : auto;
+            height: 80vh;
+        }
+
+        .hr1{
+            border: 0.75;
+            border-color: red;
+            border-style: dashed;
+        }
+
+        .past-exp-header{
+            font-size: 1.5rem;
+            max-width: 37%;
+            margin-left: 5px;
+        }
+
+        .past-exp-header :hover{
+            font-size: 2.2rem;
+            background-color: black;
+            color: aqua;
+        }
+
+        .hr1{
+            border: 0.75;
+            border-color: red;
+            border-style: dashed;
+        }
+
+        
+
     </style>
 </head>
 
@@ -107,11 +147,59 @@
     <main>
         <section class="first-sec">
             <div class="left-sec">Hello , My name is <span class="left-sec-utility1">Rishi</span><br>
-                and I am a Zealous<br><div><span class="left-sec-utility2">Backend-Developer</span></div>
+                and I am a zealous<br><div><span class="left-sec-utility2"><span id="element"></span>    
+                </span></div>
+               
             </div>
-            <div class="right-sec"><img src="/img/dev.svg" alt="" width=130%" height="80%"></div>
+            <div class="right-sec">
+                <div class="img-me">
+                    <img src="/img/rishi.jpeg" width="100%" height="100%">
+                </div>
+            </div>
         </section>
+
+        <hr class="hr1"><br>
+
+        <section class="second-section">
+            <div class="past-exp-header">
+                <b><h1>Past-Experience</h1></b></div>
+            </div>
+
+            <div class="box-1">
+                <ol style="font-size: x-large;">
+                    <li>
+                        SIH-2024 Participant
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <hr class="hr1"><br>
+
+        <div class="third-section-header">
+            <div class="skills-exp-header" style="display: flex;">
+                <b><h1>Skills</h1></b></div>
+                <img src="/img/html.webp">
+                <img src="/img/css.webp">
+                <img src="/img/js.webp" style="width: 20%;">
+                <img src="/img/mongo.webp"style="width: 50%;">
+
+            </div>
+        </div>
+        
     </main>
+    
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['<i><b>Backend-Developer</b></i>.','<i>Problem-Solver.</i>' , '<i>Book-Enthusiast</i>'],
+      typeSpeed: 80,
+    });
+  </script>
+    
 </body>
 
 </html>
